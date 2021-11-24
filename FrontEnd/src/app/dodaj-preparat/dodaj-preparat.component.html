@@ -1,0 +1,45 @@
+<div align='center'>
+    <header>
+        <h1>Dodaj preparat</h1>
+    </header>
+    <div align='center' style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='logOff()'>LogOff</button>
+        </div>
+        <br><br>   
+    <form class='forma'>
+        <table class='tabela'>
+            <tr>
+                <td>Naziv:</td>
+                <td>
+                    <input type='text' name='naziv' [(ngModel)]='naziv'>
+                </td>
+            </tr>
+            <tr>
+                <td>Progres:</td>
+                <td>
+                    <select name='progres' [(ngModel)]='progres'>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cena:</td>
+                <td>
+                    <input type='number' name='cena' [(ngModel)]='cena'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)='dodajPreparat()'>Dodaj preparat</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <span>
+        {{message}}
+    </span>
+    <br><br>
+</div>

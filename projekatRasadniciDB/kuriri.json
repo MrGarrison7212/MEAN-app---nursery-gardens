@@ -1,0 +1,15 @@
+{"_id":{"$oid":"5edc1ffbccc54b1a30ea0b46"},"id":0,"nazivPreduzeca":"MorningStar","zauzet":0.0,"idNar":0.0}
+{"_id":{"$oid":"5edc1ffbccc54b1a30ea0b47"},"id":4,"nazivPreduzeca":"MorningStar","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5edc1ffbccc54b1a30ea0b48"},"id":1,"nazivPreduzeca":"MorningStar","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5edc1ffbccc54b1a30ea0b49"},"id":2,"nazivPreduzeca":"MorningStar","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5edc1ffbccc54b1a30ea0b4a"},"id":3,"nazivPreduzeca":"MorningStar","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049adf6b6e731da8e4a5ae"},"id":0,"nazivPreduzeca":"Proces","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049adf6b6e731da8e4a5af"},"id":1,"nazivPreduzeca":"Proces","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049adf6b6e731da8e4a5b0"},"id":3,"nazivPreduzeca":"Proces","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049adf6b6e731da8e4a5b1"},"id":2,"nazivPreduzeca":"Proces","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049adf6b6e731da8e4a5b2"},"id":4,"nazivPreduzeca":"Proces","zauzet":0,"idNar":0}
+{"_id":{"$oid":"5f049cb76b6e731da8e4a5bf"},"id":0,"nazivPreduzeca":"Flora","zauzet":1,"idNar":42}
+{"_id":{"$oid":"5f049cb76b6e731da8e4a5c0"},"id":1,"nazivPreduzeca":"Flora","zauzet":1,"idNar":43}
+{"_id":{"$oid":"5f049cb76b6e731da8e4a5c1"},"id":2,"nazivPreduzeca":"Flora","zauzet":1,"idNar":44}
+{"_id":{"$oid":"5f049cb76b6e731da8e4a5c2"},"id":3,"nazivPreduzeca":"Flora","zauzet":1,"idNar":45}
+{"_id":{"$oid":"5f049cb76b6e731da8e4a5c3"},"id":4,"nazivPreduzeca":"Flora","zauzet":1,"idNar":46}

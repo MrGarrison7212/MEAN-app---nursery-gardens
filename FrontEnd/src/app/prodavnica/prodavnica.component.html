@@ -1,0 +1,152 @@
+<div align='center'>
+    <header>
+        <h1>
+            Prodavnica "{{nazivPreduzeca}}"
+        </h1>
+    </header>
+
+    <div style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='logOff()'>LogOff</button>
+        </div>
+        <br><br>
+<div align='left'>
+    <form>
+        <h3>Pretraga - sadnice</h3>
+        Naziv sadnice: <input type="text" name='nazivS'
+                    [(ngModel)]='nazivS'>
+        <button (click)= 'pretragaSadnice1()'>Pretrazi</button>
+        <div class='poruka'>{{porukaS}}</div>
+    </form>
+    <form>
+        <h3>Pretraga - preparati</h3>
+        Naziv preparata: <input type="text" name='nazivP'
+                    [(ngModel)]='nazivP'>
+        <button (click)= 'pretragaPreparati1()'>Pretrazi</button>
+        <div class='poruka'>{{porukaP}}</div>
+    </form>
+</div>
+    <button (click)='dohvatiSadniceProd()'>Prikazi sadnice</button> | <button (click)='dohvatiPreparateProd()'>Prikazi
+        preparate</button>
+    <div *ngIf='tacnoS'>
+        <form>
+            <div><span>Da li zelite da narucite neku od nasih sadnica?</span></div>
+            <button (click)='zapocniNarudzbinuSad()'>Zelim</button>
+            <table class='tabela'>
+                <caption class='caption'>
+                    Pregled sadnica
+                </caption>
+                <tr>
+                    <th class='c' (click)='comparesadN()'>Naziv</th>
+                    <th class='c'>Proizvodjac</th>
+                    <th class='c'>Informacije</th>
+                    <th class='c'>Odaberi</th>
+                </tr>
+                <tr *ngFor='let sadnica of sadniceP'>
+                    <td>{{sadnica.naziv}}</td>
+                    <td>{{sadnica.proizvodjac}}</td>
+                    <td>
+                        <button>Detalji</button>
+                    </td>
+                    <td>
+                        <button (click)='odaberiSadnicu(sadnica)'>Odaberi</button>
+                    </td>
+                </tr>
+            </table>
+            <button (click)='zavrsiNarudzbinuSad()'>Zavrsi naruzdbinu</button>
+        </form>
+    </div>
+    <br>
+    <div *ngIf='tacnoP'>
+        <form>
+            <div><span>Da li zelite da narucite neki od nasih preparata?</span></div>
+            <button (click)='zapocniNarudzbinuPrep()'>Zelim</button>
+            <table class='tabela'>
+                <caption class='caption'>
+                    Pregled preparata
+                </caption>
+                <th class='c' (click)='comparepaN()'>Naziv</th>
+                <th class='c'>Proizvodjac</th>
+                <th class='c'>Informacije</th>
+                <th class='c'>Odaberi</th>
+                <tr *ngFor='let preparat of preparatiP'>
+                    <td>{{preparat.naziv}}</td>
+                    <td>{{preparat.proizvodjac}}</td>
+                    <td>
+                        <button>Detalji</button>
+                    </td>
+                    <td>
+                        <button (click)='odaberiPreparat(preparat)'>Odaberi</button>
+                    </td>
+                </tr>
+            </table>
+            <button (click)='zavrsiNarudzbinuPrep()'>Zavrsi naruzdbinu</button>
+        </form>
+    </div>
+</div>
+
+<div align='center'>
+
+<div *ngIf='pronasaoS'>
+    <form>
+        <div><span style='background-color: white'>Da li zelite da narucite neku od nasih sadnica?</span></div>
+        <button (click)='zapocniNarudzbinuSad()'>Zelim</button>
+        <table class='tabela'>
+            <caption class='caption'>
+                Pregled sadnica
+            </caption>
+            <tr>
+                <th class='c' (click)='comparesadN()'>Naziv</th>
+                <th class='c'>Proizvodjac</th>
+                <th class='c'>Informacije</th>
+                <th class='c'>Odaberi</th>
+            </tr>
+            <tr *ngFor='let sadnica of sadnicePretraga'>
+                <td>{{sadnica.naziv}}</td>
+                <td>{{sadnica.proizvodjac}}</td>
+                <td>
+                    <button>Detalji</button>
+                </td>
+                <td>
+                    <button (click)='odaberiSadnicu(sadnica)'>Odaberi</button>
+                </td>
+            </tr>
+        </table>
+        <button (click)='zavrsiNarudzbinuSad()'>Zavrsi naruzdbinu</button>
+    </form>
+</div>
+<br>
+<div *ngIf='pronasaoP'>
+    <form>
+        <div><span>Da li zelite da narucite neki od nasih preparata?</span></div>
+        <button (click)='zapocniNarudzbinuPrep()'>Zelim</button>
+        <table class='tabela'>
+            <caption class='caption'>
+                Pregled preparata
+            </caption>
+            <th class='c' (click)='comparepaN()'>Naziv</th>
+            <th class='c'>Proizvodjac</th>
+            <th class='c'>Informacije</th>
+            <th class='c'>Odaberi</th>
+            <tr *ngFor='let preparat of preparatiPretraga'>
+                <td>{{preparat.naziv}}</td>
+                <td>{{preparat.proizvodjac}}</td>
+                <td>
+                    <button>Detalji</button>
+                </td>
+                <td>
+                    <button (click)='odaberiPreparat(preparat)'>Odaberi</button>
+                </td>
+            </tr>
+        </table>
+        <button (click)='zavrsiNarudzbinuPrep()'>Zavrsi naruzdbinu</button>
+    </form>
+</div>
+
+</div>
+
+
+
+
+
+
+

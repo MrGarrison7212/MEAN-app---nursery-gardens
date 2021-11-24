@@ -1,0 +1,45 @@
+header {
+    background-color: black;
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+
+    font-size: 50px;
+}
+.forma {
+    display: inline-block;
+    text-align: center;
+}
+
+.tabela {
+    font-size: 20px;
+    background-color: gainsboro;
+}
+.c1 {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+
+.c {
+    background-color: rgba(173, 173, 173, 0.808);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+span {
+    background-color: white;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+

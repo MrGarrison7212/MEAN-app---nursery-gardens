@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5f04997c6b6e731da8e4a5a8"},"username":"mirko","password":"Mirko123@","ime":"Mirko","prezime":"Mirkovic","mestoRodjenja":"Pancevo","datumRodjenja":"1979-07-08","kontaktTelefon":"0639485821","email":"mirko@gmail.com"}
+{"_id":{"$oid":"5f049a1d6b6e731da8e4a5ab"},"username":"goran","password":"Goran123@","ime":"Goran","prezime":"Gavrancic","mestoRodjenja":"Herceg Novi","datumRodjenja":"1979-07-01","kontaktTelefon":"0652312312","email":"goran@hotmail.com"}
+{"_id":{"$oid":"5f04a81b6b6e731da8e4a5d5"},"username":"ivan","password":"Ivan123@","ime":"Ivan","prezime":"Ivanovic","mestoRodjenja":"Smederevo","datumRodjenja":"1977-07-14","kontaktTelefon":"0603443423","email":"ivan@gmail.com"}

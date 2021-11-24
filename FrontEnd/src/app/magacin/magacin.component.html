@@ -1,0 +1,136 @@
+<div align='center'>
+    <header>
+        <h1>Magacin {{nazivMagacina}}</h1>
+    </header>
+    <div style='background-color: midnightblue'>
+    <button (click)='nazad()'>Nazad</button> | <button (click)='prikaziSveSadnice()'>Prikazi sve sadnice</button> | 
+    <button (click)='prikaziSvePreparate()'>Prikazi sve preparate</button> |<button (click)='dohvatiNarudzbineMag()'>Prikazi narudzbine</button> | <button (click)='logOff()'>LogOff</button>
+    </div>
+    <br>
+
+    <div align='left'>
+        <form>
+            <h3><span>Filter - sadnice (po nazivu ili proizvodjacu )</span> : <input type="text" name='nazivS'
+                [(ngModel)]='nazivS'>
+    <button (click)= 'filterSadnice1()'>Filter</button></h3>
+        </form>
+        <form>
+            <h3><span>Filter - preparati (po nazivu ili proizvodjacu )</span> : <input type="text" name='nazivP'
+                [(ngModel)]='nazivP'>
+    <button (click)= 'filterPreparati1()'>Filter</button> </h3>
+        </form>
+    </div>
+
+    <div *ngIf='pronasaoS'>
+        <form>
+            <table class='tabela'>
+                <caption class='caption'>
+                    Pregled sadnica
+                </caption>
+                <tr>
+                    <th class='c' (click)='comparesadN()'>Naziv</th>
+                    <th class='c' (click)='comparesadP()'>Proizvodjac</th>
+                    <th class='c'>Kolicina</th>
+                </tr>
+                <tr *ngFor='let sadni of sadnicePretraga'>
+                    <td>{{sadni.naziv}}</td>
+                    <td>{{sadni.proizvodjac}}</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div *ngIf='pronasaoP'>
+        <form>
+            <table class='tabela'>
+                <caption class='caption'>
+                    Pregled preparata
+                </caption>
+                <th class='c' (click)='comparepaN()'>Naziv</th>
+                <th class='c' (click)='comparepaP()'>Proizvodjac</th>
+                <th class='c'>Kolicina</th>
+                <tr *ngFor='let prepar of preparatiPretraga'>
+                    <td>{{prepar.naziv}}</td>
+                    <td>{{prepar.proizvodjac}}</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div *ngIf='prikaz && !pronasaoS'>
+    <form>
+        <table class='tabela'>
+            <caption class='caption'>
+                Pregled sadnica
+            </caption>
+            <tr>
+                <th class='c' (click)='comparesadN()'>Naziv</th>
+                <th class='c' (click)='comparesadP()'>Proizvodjac</th>
+                <th class='c'>Kolicina</th>
+            </tr>
+            <tr *ngFor='let sadnica of sadniceM'>
+                <td>{{sadnica.naziv}}</td>
+                <td>{{sadnica.proizvodjac}}</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </form>
+</div>
+    <br>
+    <div *ngIf='prikaz1 && !pronasaoP'>
+    <form>
+        <table class='tabela'>
+            <caption class='caption'>
+                Pregled preparata
+            </caption>
+            <th class='c' (click)='comparepaN()'>Naziv</th>
+            <th class='c' (click)='comparepaP()'>Proizvodjac</th>
+            <th class='c'>Kolicina</th>
+            <tr *ngFor='let preparat of preparatiM'>
+                <td>{{preparat.naziv}}</td>
+                <td>{{preparat.proizvodjac}}</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </form>
+</div> 
+    <br><br>
+    <div><span>Izaberi prodavnicu:</span></div>
+    <div *ngFor='let preduzece of preduzeca'>
+        <button (click)='pristupiProdavnici(preduzece)'>Prodavnica "{{preduzece.naziv}}"</button>
+    </div>
+    <br><br>
+    <div *ngIf='tacnoN'>
+        <form>
+            <table class='tabela'>
+                <caption class='caption'>
+                    Pregled narudzbina
+                </caption>
+                <tr>
+                    <th class='c'>ID</th>
+                    <th class='c'>Datum</th>
+                    <th class='c'>Vrednost</th>
+                    <th class='c'>Status</th>
+                    <th class='c'>Otkazi</th>
+                </tr>
+                <tr *ngFor='let narudzbina of narudzbineM'>
+                    <td>{{narudzbina.id}}</td>
+                    <td>{{narudzbina.datum}}</td>
+                    <td>{{narudzbina.cena}}</td>
+                    <td>{{narudzbina.status}}</td>
+                    <td>
+                        <button (click)='odbijNarudzbinu(narudzbina)'>Otkazi</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<br><br>
+<div align='right'>
+        <div class='upozorenje' *ngFor='let ras of rasadniciOdrzavanje'>
+            Rasadnik {{ras.naziv}} zahteva odrzavanje !!!
+        </div>
+</div>

@@ -1,0 +1,42 @@
+
+
+<div align='center'>
+    <header>
+        <h1>
+            Pregled rasadnika
+        </h1>
+    </header>
+    <div style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='promeniLoz()'>Promeni lozinku</button> | <button (click)='dodajRasadnikPage()'>Dodaj rasadnik</button> | <button (click)='logOff()'>LogOff</button>
+        </div>
+
+        <br><br>
+    <form class='forma'>
+        <table class='tabela'>
+            <caption class='c1'>
+                Rasadnici
+            </caption>
+            <th class='c'>Naziv</th>
+            <th class='c'>Mesto</th>
+            <th class='c'>brSad</th>
+            <th class='c'>brSlob</th>
+            <th class='c'>Temperatura</th>
+            <th class='c'>Voda</th>
+            <th class='c'>Stranice</th>
+            <tr *ngFor='let rasadnik of rasadniciVlasnika'>
+                <td>{{rasadnik.naziv}}</td>
+                <td>{{rasadnik.mesto}}</td>
+                <td>{{rasadnik.sadnice}}</td>
+                <td>{{rasadnik.sadniceMax - rasadnik.sadnice}}</td>
+                <td>{{rasadnik.temperatura}}</td>
+                <td>{{rasadnik.voda}}</td>
+                <td>
+                    <button (click)= 'pristupiRasadniku(rasadnik)'>Pristup</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+ 
+</div>

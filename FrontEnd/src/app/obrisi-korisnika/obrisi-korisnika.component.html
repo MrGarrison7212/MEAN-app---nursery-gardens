@@ -1,0 +1,42 @@
+<div align='center'>
+    <header>
+        <h1>Brisanje korisnika</h1>
+    </header>
+    <div align='center' style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='logOff()'>LogOff</button>
+        </div>
+        <br><br>      
+    <form>
+        <table class='tabela'>
+            <caption class='caption'>
+                Poljoprivrednici
+            </caption>
+            <th class='c'>Username</th>
+            <th class='c'>Obrisi</th>
+            <tr *ngFor='let poljoprivrednik of poljoprivrednici'>
+                <td>{{poljoprivrednik.username}}</td>
+                <td>
+                    <button (click) = 'obrisiPoljoprivrednika(poljoprivrednik)'>X</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form>
+        <table class='tabela'>
+            <caption class='caption'>
+                Preduzeca
+            </caption>
+            <th class='c'>Username</th>
+            <th class='c'>Obrisi</th>
+            <tr *ngFor='let preduzece of preduzeca'>
+                <td>{{preduzece.username}}</td>
+                <td>
+                    <button (click)='obrisiPreduzece(preduzece)'>X</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</div>

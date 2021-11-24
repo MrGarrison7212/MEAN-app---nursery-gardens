@@ -1,0 +1,32 @@
+U ovom delu su objasnjene sve pojedinosti vezane za bazu podataka, njeno povezivanje, importovanje, osposobljavanje za dalje funkcionisanje i sinhronizaciju sa ostalim delovima projekta.
+Kako sam student RTI smera, gde se akcenat nije stavio na ovaj deo gradiva, smatram da bi bilo prikladno da prikazem kako je uradjen ovaj deo projektnog zadatka.
+
+C-ProgramF-MongoDB-udje se u bin, kopira se putanja, zatim komanda - mongod, nakon koje ce biti greska da nema C:\data\db\ - kreira se folder data\db na C-u.
+Zatim, otvori se novi terminal, udje se opet u bin, i pokrece se komanda - mongo.
+Da bi video baze - show dbs
+Zatim, da bi se napravila nova baza - use ImeBaze, i da bi mogla da se vidi, mora se popuniti nekom tabelom, npr = db.books.insert({"name":"mongodb book"}) , ili db.createCollection("books");
+
+show collections - pregled tabela.
+db.books.find().pretty() - pregled pojedinacne tabele.
+db.books.drop- brisi tabelu.
+db.books.deleteOne({"name":"mongodb book"});
+db.books.updateOne({"name":"mongodb book"},{$set:{"pages":150}});
+
+
+
+podesavanje da radi na mongo komandu uvek:
+Kopira se opet bin putanja, zatim desni klik na start - pa System.
+Zatim, na search idi na advanced system settings, environment variables.
+U system variables, u Path - dupli klik na Path, zatim New, i kopira se u to polje bin putanja. Ok, i sve je okej.
+
+Eksport-import- u zasebnom cmd sa lokacijom bin-a.
+
+Eksportovanje - udje se u bin, i zatim se radi komanda:
+mongoexport --db projekatRasadnici --collection ADMINI --out admini.json
+
+Zatim, opet se udje u bin (pre toga se ubace eksportovani fajlovi), importuje se baza, na ovaj nacin za svaku tabelu koja je eksportovana:
+mongoimport --db projekatRasadnici --collection ADMINI --file admini.json
+
+
+
+

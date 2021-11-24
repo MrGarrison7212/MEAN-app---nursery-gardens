@@ -1,0 +1,34 @@
+<div align='center'>
+    <header>
+        <h1>Prijava korisnika</h1>
+    </header>
+    <form class='forma'>
+        <table class='tabela'>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type='text' name='username' [(ngModel)]='username'>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type='password' name='password' [(ngModel)]='password'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)='login()'>Prijavi se</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+
+
+    <span>
+        {{message}}
+    </span>
+    <br><br>
+    <a routerLink='/pocetna'>Pocetna</a>
+</div>

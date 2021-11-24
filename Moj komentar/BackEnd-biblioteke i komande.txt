@@ -1,0 +1,21 @@
+U ovom delu se uz komande navode sve biblioteke i neophodne stvari za funkcionisanje backEnd dela, a samim tim i celog projekta. Za kraj se navodi komanda kojom povezujemo backEnd, bazu i front deo (konkretno za moj server front deo bi se pravio sa datim imenom "projekatPIA" - ng new projekatPIA. U samom front delu, u angular sam u jednom trenutku importovao material, ali posto sam odustao od koriscenja istog, rucno je izbrisan).
+
+npm i
+npm i body-parser
+npm i cookie-parser
+npm i cors
+npm i crypto
+npm i express
+npm i express-session
+npm i joi
+npm i joi-objectid
+npm i moment
+npm i mongodb
+npm i mongoose
+npm i nodemon
+
+
+npm init -y
+
+
+npm run dev

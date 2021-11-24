@@ -1,0 +1,20 @@
+
+
+
+.tabela{
+    text-align: center;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+header {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}

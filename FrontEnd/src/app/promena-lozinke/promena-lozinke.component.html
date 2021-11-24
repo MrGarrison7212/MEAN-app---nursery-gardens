@@ -1,0 +1,125 @@
+<header>
+<h1>Promena lozinke</h1>
+</header>
+<!--<form>
+    <h2>Unesite korisnicko ime:</h2>
+    Username: <input type="text" name='username' [(ngModel)]='username'>
+    <br>
+    <button (click)='pretragaKorisnika()'>Pretrazi</button>
+</form>
+-->
+<div align='center' style='background-color: midnightblue'><button (click)='nazad()'>Nazad</button> | <button (click)='logOff()'>LogOff</button></div>
+<br><br>
+<div>
+    <form>
+        <table class='tabela'>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type='text' name='username' [(ngModel)]='username'>
+                </td>
+            </tr>
+            <tr>
+                <td>Stara lozinka:</td>
+                <td>
+                    <input type='password' name='password' [(ngModel)]='password'>
+                </td>
+            </tr>
+            <tr>
+                <td>Nova lozinka:</td>
+                <td>
+                    <input type='password' name='passwordNew' [(ngModel)]='passwordNew'>
+                </td>
+            </tr>
+            <tr>
+                <td>Potvrdite novu lozinku:</td>
+                <td>
+                    <input type='password' name='passwordNew' [(ngModel)]='passwordNewConf'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)='promeniLozinku()'>Potvrdi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<!--<div *ngIf='poljoprivrednikIzmena'>
+    <form>
+        <table class='tabela'>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type='text' name='username' [(ngModel)]='username'>
+                </td>
+            </tr>
+            <tr>
+                <td>Stara lozinka:</td>
+                <td>
+                    <input type='password' name='password' [(ngModel)]='password'>
+                </td>
+            </tr>
+            <tr>
+                <td>Nova lozinka:</td>
+                <td>
+                    <input type='password' name='passwordNew' [(ngModel)]='passwordNew'>
+                </td>
+            </tr>
+            <tr>
+                <td>Potvrdite novu lozinku:</td>
+                <td>
+                    <input type='password' name='passwordNewConf' [(ngModel)]='passwordNewConf'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)='promeniLozinku()'>Potvrdi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div *ngIf='preduzeceIzmena'>
+    <form>
+        <table class='tabela'>
+                <tr>
+                        <td>Username:</td>
+                        <td>
+                            <input type='text' name='username' [(ngModel)]='username'>
+                        </td>
+                    </tr>
+            <tr>
+                <td>Stara lozinka:</td>
+                <td>
+                    <input type='password' name='password' [(ngModel)]='password'>
+                </td>
+            </tr>
+            <tr>
+                <td>Nova lozinka:</td>
+                <td>
+                    <input type='password' name='passwordNew' [(ngModel)]='passwordNew'>
+                </td>
+            </tr>
+            <tr>
+                <td>Potvrdite novu lozinku:</td>
+                <td>
+                    <input type='password' name='passwordNewConf' [(ngModel)]='passwordNewConf'>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button (click)='promeniLozinku()'>Potvrdi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+-->
+<div align='center'>
+    <span>
+        {{message}}
+    </span>
+</div>
+

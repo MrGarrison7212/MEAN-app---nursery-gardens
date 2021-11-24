@@ -1,0 +1,107 @@
+<div align='center'>
+    <header>
+        <h1>
+            Preduzece "{{preduzece.naziv}}"
+        </h1>
+    </header>
+
+    <div style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='promeniLoz()'>Promeni lozinku</button> | <button (click)='dohvatiNarudzbineP()'>Prikazi narudzbine</button> | <button (click)='dohvatiSadniceP()'>Prikazi sadnice</button> | 
+        <button (click)='dohvatiPreparateP()'>Prikazi preparate</button> | <button (click)= 'pregledPoslovanjaPage()'>Pregled poslovanja</button> |<button (click)='logOff()'>LogOff</button>
+        </div>
+        <br><br>
+    <div *ngIf='tacnoS'>
+        <form class='forma'>
+            <table class='tabela'>
+                <caption  style='background-color: black; color:white'>
+                    Pregled sadnica
+                </caption>
+                <tr>
+                    <th class='c' (click)='comparesadN()'>Naziv</th>
+                    <th class='c' (click)='comparesadP()'>Proizvodjac</th>
+                    <th class='c'>Informacije</th>
+                    <th class='c'>Ukloni sadnicu</th>
+
+                </tr>
+                <tr *ngFor='let sadnica of sadniceP'>
+                    <td>{{sadnica.naziv}}</td>
+                    <td>{{sadnica.proizvodjac}}</td>
+                    <td>
+                        <button>Detalji</button>
+                    </td>
+                    <td>
+                        <button (click)='ukloniSadnicu(sadnica)'>Ukloni</button>
+                    </td>
+                </tr>
+            </table>
+            <button (click)='dodajSadnicuPage()'>Dodaj sadnicu</button>
+            <!--       <mat-horizontal-stepper>
+            <mat-step label='naziv'>Naziv</mat-step>
+            <mat-step label='cena'>Cena</mat-step>
+            <mat-step label='dodaj u prodavnicu'>Dodaj u prodavnicu</mat-step>
+        </mat-horizontal-stepper>
+-->
+        </form>
+    </div>
+    <br>
+    <div *ngIf='tacnoP'>
+        <form class='forma'>
+            <table class='tabela'>
+                <caption  style='background-color: black; color:white'>
+                    Pregled preparata
+                </caption>
+                <th class='c' (click)='comparepaN()'>Naziv</th>
+                <th class='c' (click)='comparepaP()'>Proizvodjac</th>
+                <th class='c'>Informacije</th>
+                <th class='c'>Ukloni preparat</th>
+                <tr *ngFor='let preparat of preparatiP'>
+                    <td>{{preparat.naziv}}</td>
+                    <td>{{preparat.proizvodjac}}</td>
+                    <td>
+                        <button>Detalji</button>
+                    </td>
+                    <td>
+                        <button (click)='ukloniPreparat(preparat)'>Ukloni</button>
+                    </td>
+                </tr>
+            </table>
+            <button (click)= 'dodajPreparatPage()'>Dodaj preparat</button>
+        </form>
+        <br>
+    </div>
+
+        <div *ngIf='tacnoN'>
+            <form class='forma'>
+                <table class='tabela'>
+                    <caption  style='background-color: black; color:white'>
+                        Pregled narudzbina
+                    </caption>
+                    <tr>
+                        <th class='c' (click)='compareNarDat()'>ID</th>
+                        <th class='c' (click)='compareNarDat()'>Datum</th>
+                        <th class='c'>Vrednost</th>
+                        <th class='c' (click)='compareStatus()'>Status</th>
+                        <th class='c'>Prihvati</th>
+                        <th class='c'>Odbij</th>
+                    </tr>
+                    <tr *ngFor='let narudzbina of narudzbineP'>
+                        <td>{{narudzbina.id}}</td>
+                        <td>{{narudzbina.datum}}</td>
+                        <td>{{narudzbina.cena}}</td>
+                        <td>{{narudzbina.status}}</td>
+                        <td>
+                            <button (click)='prihvatiNarudzbinu(narudzbina)'>Prihvati</button>
+                        </td>
+                        <td>
+                            <button (click)='odbijNarudzbinu(narudzbina)'>Odbij</button>
+                        </td>
+                    </tr>
+                </table>
+                <button (click)='zapocniIsporuku()'>Zapocni isporuke</button>
+            </form>
+            <span>
+                {{message}}
+            </span>
+        </div>
+ 
+    </div>

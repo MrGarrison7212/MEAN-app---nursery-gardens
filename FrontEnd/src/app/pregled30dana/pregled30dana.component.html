@@ -1,0 +1,54 @@
+<body>
+    <header>
+        <h1>Pregled poslovanja i narudzbina u poslednjih 30 dana</h1>
+    </header>
+    <div align='center' style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='prikaziSve()'>Prikazi sve narudzbine</button> | <button (click)='prikaziUkupno()'>Prikazi ukupan bilans</button> | <button (click)='prikazi()'>Prikazi broj narudzbina po danima</button> | <button (click)='logOff()'>LogOff</button>
+        </div>
+        <br><br>   
+
+    <div align='center'  *ngIf='prikaz1'>
+        <table class='tabela'>
+            <caption class='c1'>Spisak svih narudzbina u poslednjih 30 dana</caption>
+            <th class='c'>ID</th>
+            <th class='c'>Datum</th>
+            <th class='c'>Iznos</th>
+            <tr *ngFor='let narudzbina of narudzbine30'>
+                <td>{{narudzbina.id}}</td>
+                <td>{{narudzbina.datum}}</td>
+                <td>{{narudzbina.cena}}</td>
+            </tr>
+        </table>
+        <br>
+        <span>Ostalih dana nije bilo uspesno azuriranih narudzbina.</span>
+    </div>
+    <div align='center'  *ngIf='prikaz2'>
+        <table class='tabela'>
+            <caption class='c1'>Ukupno stanje u poslednjih 30 dana</caption>
+            <th class='c'>Ukupan broj narudzbina</th>
+            <th class='c'>Ukupna zarada</th>
+            <tr>
+                <td>{{ukupnoBroj}}</td>
+                <td>{{ukupanIznos}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div align='center' *ngIf='prikaz'>
+    <table class='tabela'>
+        <tr>
+            <th class='c'>Datum</th>
+            <th class='c'>Broj narudzbina po danu</th>
+        </tr>
+        <tr *ngFor='let dan of poslednjih30dana; let i = index'>
+            <td>
+                {{dan}}
+            </td>
+            <td>
+                {{narudzbineZaPregled[i]}}
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>

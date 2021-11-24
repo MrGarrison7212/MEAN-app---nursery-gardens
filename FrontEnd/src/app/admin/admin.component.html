@@ -1,0 +1,54 @@
+<html style='background: url(assets/images/fensi.jpg); background-size: 100% 100%'>
+
+<div align='center'>
+    <header>
+    <h1>Administrator</h1>
+    </header>
+
+    <div align='center'  style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button> | <button (click)='dodajKorisnika()'>Dodaj korisnika</button> | <button (click)='azurirajKorisnika()'>Azuriraj podatke korisnika</button> | 
+        <button (click)='obrisiKorisnika()'>Obrisi korisnika</button> | <button (click)='logOff()'>LogOff</button>
+    </div>
+    <br><br>
+
+    <h2>Spisak zahteva za registraciju - korisnicka imena</h2>
+    <form>
+        <table class='tabela' style="display: inline-block; border: 1px solid;">
+            <caption class='c1'>Zahtevi poljoprivrednika</caption>
+            <th class='c'>Username</th>
+            <th class='c'>Prihvati</th>
+            <th class='c'>Odbij</th>
+            <tr *ngFor='let zahtevPoljo of zahteviPoljo'>
+                <td>{{zahtevPoljo.username}}</td>
+                <td>
+                    <button (click)='odobriRegPoljo(zahtevPoljo)'><span>&#10003;</span></button>
+                </td>
+                <td>
+                    <button (click)='obrisiRegPoljo(zahtevPoljo)'>X</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <table class='tabela' style="display: inline-block; border: 1px solid;">
+            <caption class='c1'>Zahtevi preduzeca</caption>
+            <th class='c'>Username</th>
+            <th class='c'>Prihvati</th>
+            <th class='c'>Odbij</th>
+            <tr *ngFor='let zahtevPred of zahteviPred'>
+                <td>{{zahtevPred.username}}</td>
+                <td>
+                    <button (click)='odobriRegPred(zahtevPred)'><span>&#10003;</span></button>
+                </td>
+                <td>
+                    <button (click)='obrisiRegPred(zahtevPred)'>X</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <button (click)='zapocniProgres()'>Zapocni</button>
+
+</div>
+</html>

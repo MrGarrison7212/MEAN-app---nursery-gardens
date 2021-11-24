@@ -1,0 +1,72 @@
+<div align='center'>
+    <header>
+        <h1>Registracija preduzeca</h1>
+    </header>
+    <div align='center' style='background-color: midnightblue'>
+        <button (click)='nazad()'>Nazad</button>
+        </div>
+        <br><br>   
+        <form class='forma'>
+            <table class='tabela'>
+                <tr>
+                    <td>Naziv</td>
+                    <td>
+                        <input type='text' name='naziv'
+                        [(ngModel)] = 'naziv'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                        <input type='text' name='username'
+                        [(ngModel)] = 'username'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type='password' name='password'
+                        [(ngModel)] = 'password'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password-potvrda:</td>
+                    <td>
+                        <input type='password' name='passwordConf'
+                        [(ngModel)] = 'passwordConf'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>datumOsnivanja:</td>
+                    <td>
+                        <input type='date' name='datumOsnivanja'
+                        [(ngModel)] = 'datumOsnivanja'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mesto:</td>
+                    <td>
+                        <input type='text' name='mesto'
+                        [(ngModel)] = 'mesto'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="text" name='email'
+                        [(ngModel)] = 'email'>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button (click)= 'register2()'>Registruj se</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <span>
+            {{message}}
+        </span>
+
+    </div>
+    

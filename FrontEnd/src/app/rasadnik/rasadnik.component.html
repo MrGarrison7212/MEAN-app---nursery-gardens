@@ -1,0 +1,136 @@
+<html>
+
+<header>
+    <h1>Rasadnik {{rasadnik.naziv}}
+    </h1>
+</header>
+
+<div align='center'  style='background-color: midnightblue'>
+    <button (click)='nazad()'>Nazad</button> | <button (click)='pristupiMagacinu()'>Pristupi magacinu</button> | <button (click)='logOff()'>LogOff</button>
+</div>
+
+<div align='right'>
+
+    <div>Temperatura: &nbsp;
+        {{rasadnik.temperatura}} ℃ &nbsp;</div> &nbsp; <button (click)='povecajTemperaturu()'>+</button> &nbsp; <button
+        (click)='smanjiTemperaturu(rasadnik)'>-</button>&nbsp; &nbsp;
+    <br>
+    <div>Voda: &nbsp;
+        {{rasadnik.voda}} l &nbsp;</div> &nbsp; <button (click)='povecajVodu(rasadnik)'>+</button> &nbsp; <button
+        (click)='smanjiVodu(rasadnik)'>-</button>&nbsp; &nbsp;
+</div>
+
+
+<div *ngFor='let i of duzinaRAS' style='background-color:khaki ' align="center">
+    <form>
+        <table>
+            <tr>
+                <td *ngFor='let j of sirinaRAS'>
+                    <table>
+                        <tr  *ngFor='let parcela of parceleRas'>
+                            <td>
+                                    <div *ngIf='parcela.idSad != 0 && parcela.id == (i+j)'><button (mouseover)='sadnicaInfo(parcela)'>Sadnica{{parcela.idSad}}</button>
+                                    </div>
+                                    <div *ngIf='parcela.idSad == 0 && parcela.id == (i+j)'><button (mouseover)='popuniPrazno(parcela)'>Prazno
+                                            {{parcela.id}}</button>
+                                    </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+<div align='center'>
+    <form *ngIf='sadnica && sadnica.progres < 100'>
+        <table class='tabela1'>
+            <tr>
+                <td>Naziv:</td>
+                <td>
+                    {{sadnica.naziv}}{{sadnica.id}}
+                </td>
+            </tr>
+            <tr>
+                <td>Proizvodjac:</td>
+                <td>
+                    {{sadnica.proizvodjac}}
+                </td>
+            </tr>
+            <tr>
+                <td>Progres:</td>
+                <td>
+                    {{sadnica.progres}}%
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" *ngIf='sadnica.prepa == 0'>
+                    <button (click)='dodajPreparatS(sadnica)'>Dodaj preparat</button>
+                </td>
+                <td *ngIf='sadnica.prepa == 1'>
+                    Preparat je dodat u sadnicu {{sadnica.id}} .
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+<div align='center'>
+    <form *ngIf='preparatiM'>
+        <table class='tabela2'>
+            <tr *ngFor='let prep of preparatiM'>
+                <td>{{prep.naziv}}</td>
+                <td>progres - {{prep.progres}}</td>
+                <td>
+                    <button (click)='dodajPreparatSS(prep)'>Dodaj</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div align='center'>
+    <form *ngIf='sadnica && sadnica.progres >= 100'>
+        <table class='tabela1'>
+            <tr>
+                <td>Sadnica {{sadnica.id}} ({{sadnica.naziv}}) je spremna za presadjivanje!</td>
+            </tr>
+            <tr>
+                <td>
+                    <button (click)='presadiSadnicu(sadnica)'>Presadi sadnicu</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<br>
+
+<div align='center'>
+    <form *ngIf='sadniceM'>
+        <table class='tabela2'>
+            <tr *ngFor='let sadnic of sadniceM'>
+                <td>{{sadnic.naziv}}</td>
+                <td>{{sadnic.proizvodjac}}</td>
+                <td>
+                    <button (click)='postaviSadnicu(sadnic)'>Dodaj</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<br><br>
+
+<br><br>
+<br><br>
+
+<div align='right'>
+    <div class='upozorenje' *ngFor='let ras of rasadniciOdrzavanje'>
+        Rasadnik {{ras.naziv}} zahteva odrzavanje !!!
+    </div>
+</div>
+
+</html>

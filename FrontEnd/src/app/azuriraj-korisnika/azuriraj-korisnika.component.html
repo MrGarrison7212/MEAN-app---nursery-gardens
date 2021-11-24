@@ -1,0 +1,102 @@
+<header>
+<h1>Azuriranje korisnika</h1>
+</header>
+<div align='center' style='background-color: midnightblue'>
+    <button (click)='nazad()'>Nazad</button> | <button (click)='logOff()'>LogOff</button>
+    </div>
+    <br><br>    
+<form>
+    <h2><span>Pretraga - poljoprivrednici</span></h2>
+    Username: <input type="text" name='username1'
+                [(ngModel)]='username1'>
+    <button (click)= 'pretragaPoljo(username1)'>Pretrazi</button>
+</form>
+<div *ngIf='poljoprivrednikIzmena'>
+    <form>
+        <table class='tabela'>
+            <tr>
+                <td>Ime:</td>
+                <td>
+                    <input type='text' name='ime' [(ngModel)]='poljoprivrednikIzmena.ime'>
+                </td>
+            </tr>
+            <tr>
+                <td>Prezime:</td>
+                <td>
+                    <input type='text' name='prezime' [(ngModel)]='poljoprivrednikIzmena.prezime'>
+                </td>
+            </tr>
+            <tr>
+                <td>mestoRodjenja:</td>
+                <td>
+                    <input type='text' name='mestoRodjenja' [(ngModel)]='poljoprivrednikIzmena.mestoRodjenja'>
+                </td>
+            </tr>
+            <tr>
+                <td>datumRodjenja:</td>
+                <td>
+                    <input type='text' name='datumRodjenja' [(ngModel)]='poljoprivrednikIzmena.datumRodjenja'>
+                </td>
+            </tr>
+            <tr>
+                <td>kontaktTelefon:</td>
+                <td>
+                    <input type='text' name='kontaktTelefon' [(ngModel)]='poljoprivrednikIzmena.kontaktTelefon'>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="text" name='email' [(ngModel)]='poljoprivrednikIzmena.email'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)='azurirajPoljo()'>Potvrdi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<form>
+    <h2><span>Pretraga - preduzeca</span></h2>
+    Username: <input type="text" name='username2'
+    [(ngModel)]='username2'>
+    <button (click) = 'pretragaPred(username2)'>Pretrazi</button>
+</form>
+<div *ngIf='preduzeceIzmena'>
+    <form>
+        <table class='tabela'>
+            <tr>
+                <td>Naziv</td>
+                <td>
+                    <input type='text' name='naziv' [(ngModel)]='preduzeceIzmena.naziv'>
+                </td>
+            </tr>
+            <tr>
+                <td>datumOsnivanja:</td>
+                <td>
+                    <input type='text' name='datumOsnivanja' [(ngModel)]='preduzeceIzmena.datumOsnivanja'>
+                </td>
+            </tr>
+            <tr>
+                <td>Mesto:</td>
+                <td>
+                    <input type='text' name='mesto' [(ngModel)]='preduzeceIzmena.mesto'>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="text" name='email' [(ngModel)]='preduzeceIzmena.email'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click) = 'azurirajPred()'>Potvrdi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+

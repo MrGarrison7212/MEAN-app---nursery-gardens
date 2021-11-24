@@ -1,0 +1,48 @@
+{"_id":{"$oid":"5edbb8f39f6c7f078c98e635"},"id":1,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-06T15:40:38.683Z","cena":70,"vrsta":0,"proizvodi":[1]}
+{"_id":{"$oid":"5edc2131ccc54b1a30ea0b5f"},"id":2,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-06T23:05:26.969Z","cena":290,"vrsta":0,"proizvodi":[1,2,3]}
+{"_id":{"$oid":"5edc213bccc54b1a30ea0b60"},"id":3,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-06T23:05:37.734Z","cena":200,"vrsta":1,"proizvodi":[1,3]}
+{"_id":{"$oid":"5ede344f0b7034433884773d"},"id":4,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-08T12:51:33.956Z","cena":50,"vrsta":0,"proizvodi":[4]}
+{"_id":{"$oid":"5ede345a0b7034433884773e"},"id":5,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-08T12:51:44.305Z","cena":320,"vrsta":0,"proizvodi":[4,7]}
+{"_id":{"$oid":"5ede34660b7034433884773f"},"id":6,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-08T12:51:55.126Z","cena":200,"vrsta":1,"proizvodi":[5]}
+{"_id":{"$oid":"5edf899019292d274c9dfc8b"},"id":7,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-09T13:07:36.124Z","cena":200,"vrsta":0,"proizvodi":[4]}
+{"_id":{"$oid":"5edf899b19292d274c9dfc8c"},"id":8,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-09T13:07:43.578Z","cena":200,"vrsta":0,"proizvodi":[5]}
+{"_id":{"$oid":"5edf89a219292d274c9dfc8d"},"id":9,"proizvodjac":"MorningStar","magacin":"MSKRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-06-09T13:07:51.592Z","cena":200,"vrsta":1,"proizvodi":[2,4]}
+{"_id":{"$oid":"5f025d280efab715bc2cc82a"},"id":10,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-05T23:07:26.292Z","cena":200,"vrsta":0,"proizvodi":[1,2]}
+{"_id":{"$oid":"5f025d320efab715bc2cc82b"},"id":11,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-05T23:07:34.988Z","cena":210,"vrsta":1,"proizvodi":[6,7]}
+{"_id":{"$oid":"5f02639f0efab715bc2cc831"},"id":12,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-05T23:34:59.481Z","cena":100,"vrsta":0,"proizvodi":[4]}
+{"_id":{"$oid":"5f038f134769851294090927"},"id":13,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-06T20:52:42.160Z","cena":100,"vrsta":0,"proizvodi":[5]}
+{"_id":{"$oid":"5f038f1d4769851294090928"},"id":14,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-06T20:52:48.971Z","cena":100,"vrsta":1,"proizvodi":[8]}
+{"_id":{"$oid":"5f03b6ca3b03840accd46278"},"id":15,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-06T23:42:05.129Z","cena":100,"vrsta":0,"proizvodi":[7]}
+{"_id":{"$oid":"5f0497116b6e731da8e4a5a6"},"id":16,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ODBIJENA","datum":"2020-07-07T15:39:00.663Z","cena":100,"vrsta":0,"proizvodi":[6]}
+{"_id":{"$oid":"5f049d516b6e731da8e4a5cc"},"id":17,"proizvodjac":"MorningStar","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:05:47.566Z","cena":100,"vrsta":0,"proizvodi":[6]}
+{"_id":{"$oid":"5f049d656b6e731da8e4a5cd"},"id":18,"proizvodjac":"Proces","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:06:15.789Z","cena":210,"vrsta":0,"proizvodi":[12,9]}
+{"_id":{"$oid":"5f049d896b6e731da8e4a5ce"},"id":19,"proizvodjac":"Flora","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:06:38.268Z","cena":200,"vrsta":0,"proizvodi":[16]}
+{"_id":{"$oid":"5f049e286b6e731da8e4a5cf"},"id":20,"proizvodjac":"Flora","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:09:15.621Z","cena":150,"vrsta":1,"proizvodi":[12]}
+{"_id":{"$oid":"5f04a0a16b6e731da8e4a5d2"},"id":21,"proizvodjac":"Flora","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:19:49.704Z","cena":300,"vrsta":1,"proizvodi":[14]}
+{"_id":{"$oid":"5f04a0ac6b6e731da8e4a5d3"},"id":22,"proizvodjac":"Flora","magacin":"MPPRAS3","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T16:20:03.355Z","cena":300,"vrsta":1,"proizvodi":[15]}
+{"_id":{"$oid":"5f04d5bb3723991248846f66"},"id":23,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T20:06:26.018Z","cena":200,"vrsta":0,"proizvodi":[21]}
+{"_id":{"$oid":"5f04d5ca3723991248846f67"},"id":24,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T20:06:39.727Z","cena":200,"vrsta":0,"proizvodi":[22]}
+{"_id":{"$oid":"5f04d5d43723991248846f68"},"id":25,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T20:06:48.363Z","cena":200,"vrsta":0,"proizvodi":[23]}
+{"_id":{"$oid":"5f04d5e53723991248846f69"},"id":26,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T20:07:05.665Z","cena":200,"vrsta":0,"proizvodi":[24]}
+{"_id":{"$oid":"5f04d5ec3723991248846f6a"},"id":27,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T20:07:11.378Z","cena":200,"vrsta":0,"proizvodi":[25]}
+{"_id":{"$oid":"5f04d5f43723991248846f6b"},"id":28,"proizvodjac":"MorningStar","magacin":"MSKRAS1","status":"SPREMNA","datum":"2020-07-07T20:07:21.012Z","cena":200,"vrsta":0,"proizvodi":[26]}
+{"_id":{"$oid":"5f0501ea3723991248846f93"},"id":29,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:14:55.598Z","cena":300,"vrsta":0,"proizvodi":[18]}
+{"_id":{"$oid":"5f0501f83723991248846f94"},"id":30,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:15:08.086Z","cena":100,"vrsta":0,"proizvodi":[20]}
+{"_id":{"$oid":"5f0502013723991248846f95"},"id":31,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:15:18.550Z","cena":100,"vrsta":0,"proizvodi":[28]}
+{"_id":{"$oid":"5f0502103723991248846f96"},"id":32,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:15:33.431Z","cena":200,"vrsta":0,"proizvodi":[29]}
+{"_id":{"$oid":"5f05021f3723991248846f97"},"id":33,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:15:48.866Z","cena":200,"vrsta":1,"proizvodi":[13]}
+{"_id":{"$oid":"5f05022c3723991248846f98"},"id":34,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:15:59.402Z","cena":300,"vrsta":1,"proizvodi":[16]}
+{"_id":{"$oid":"5f050c573723991248846f9b"},"id":35,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:22.532Z","cena":200,"vrsta":0,"proizvodi":[17]}
+{"_id":{"$oid":"5f050c5d3723991248846f9c"},"id":36,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:28.057Z","cena":300,"vrsta":0,"proizvodi":[19]}
+{"_id":{"$oid":"5f050c623723991248846f9d"},"id":37,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:33.319Z","cena":200,"vrsta":0,"proizvodi":[30]}
+{"_id":{"$oid":"5f050c6c3723991248846f9e"},"id":38,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:43.115Z","cena":100,"vrsta":0,"proizvodi":[31]}
+{"_id":{"$oid":"5f050c713723991248846f9f"},"id":39,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:48.518Z","cena":100,"vrsta":0,"proizvodi":[32]}
+{"_id":{"$oid":"5f050c793723991248846fa0"},"id":40,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-07T23:59:57.072Z","cena":150,"vrsta":1,"proizvodi":[18]}
+{"_id":{"$oid":"5f050cac3723991248846fa1"},"id":41,"proizvodjac":"Flora","magacin":"MSKRAS5","status":"ISPORUCENA I AZURIRANA","datum":"2020-07-08T00:00:46.852Z","cena":400,"vrsta":1,"proizvodi":[17]}
+{"_id":{"$oid":"5f0515b380b1211fd4d3afcf"},"id":42,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"CEKA ISPORUKU","datum":"2020-07-08T00:39:18.572Z","cena":100,"vrsta":0,"proizvodi":[33]}
+{"_id":{"$oid":"5f0515b980b1211fd4d3afd0"},"id":43,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"CEKA ISPORUKU","datum":"2020-07-08T00:39:23.885Z","cena":100,"vrsta":0,"proizvodi":[34]}
+{"_id":{"$oid":"5f0515be80b1211fd4d3afd1"},"id":44,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"CEKA ISPORUKU","datum":"2020-07-08T00:39:32.831Z","cena":100,"vrsta":0,"proizvodi":[35]}
+{"_id":{"$oid":"5f0515c780b1211fd4d3afd2"},"id":45,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"CEKA ISPORUKU","datum":"2020-07-08T00:39:37.741Z","cena":100,"vrsta":0,"proizvodi":[36]}
+{"_id":{"$oid":"5f0515cc80b1211fd4d3afd3"},"id":46,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"CEKA ISPORUKU","datum":"2020-07-08T00:39:42.866Z","cena":100,"vrsta":0,"proizvodi":[37]}
+{"_id":{"$oid":"5f0515d280b1211fd4d3afd4"},"id":47,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"NA CEKANJU","datum":"2020-07-08T00:39:50.333Z","cena":100,"vrsta":1,"proizvodi":[19]}
+{"_id":{"$oid":"5f0515db80b1211fd4d3afd5"},"id":48,"proizvodjac":"Flora","magacin":"MSKRAS4","status":"SPREMNA","datum":"2020-07-08T00:39:58.299Z","cena":150,"vrsta":1,"proizvodi":[20]}
